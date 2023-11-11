@@ -1,0 +1,15 @@
+[project]
+name = "fsa-rabac"
+version = "0.1.0"
+description = "FastAPI+SQLModel+Alembic+JWT rabac authentication and authorization"
+authors = [
+    {name = "Gabriel Martin del Campo y Eternod", email = "gmartindelcye@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
