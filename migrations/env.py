@@ -1,11 +1,9 @@
 from logging.config import fileConfig
 
-from sqlalchemy import engine_from_config
-from sqlalchemy import pool
-from decouple import config
-from sqlmodel import SQLModel
-
 from alembic import context
+from decouple import config
+from sqlalchemy import engine_from_config, pool
+from sqlmodel import SQLModel
 
 DATABASE_URL = config('DATABASE_URL')
 
@@ -21,10 +19,7 @@ if config.config_file_name is not None:
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-from models.user import User, Profile
-from models.role import Role
-from models.customer import Customer
-
+from models import *  # noqa: S2208
 
 target_metadata = SQLModel.metadata
 
