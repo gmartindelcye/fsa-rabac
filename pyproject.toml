@@ -5,7 +5,18 @@ description = "FastAPI+SQLModel+Alembic+JWT rabac authentication and authorizati
 authors = [
     {name = "Gabriel Martin del Campo y Eternod", email = "gmartindelcye@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "fastapi>=0.104.1",
+    "sqlmodel>=0.0.11",
+    "alembic>=1.12.1",
+    "python-jose>=3.3.0",
+    "python-multipart>=0.0.6",
+    "uvicorn>=0.24.0.post1",
+    "bcrypt>=4.0.1",
+    "python-decouple>=3.8",
+    "psycopg-binary>=3.1.12",
+    "psycopg2-binary>=2.9.9",
+]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
